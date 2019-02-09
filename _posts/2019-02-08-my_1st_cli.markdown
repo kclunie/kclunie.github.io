@@ -1,0 +1,11 @@
+---
+layout: post
+title:      "My_1st_Cli"
+date:       2019-02-09 03:09:05 +0000
+permalink:  my_1st_cli
+---
+
+
+Creating my first Ruby gem was an exciting process. My Ruby gem provides a CLI to view upcoming movies as per the International Movie Database(IMDb) website. Users can follow prompts to recieve a list of upcoming movies and then have the choice to see further details of the movie by making a selection.
+
+This project was challenging, but I felt very accomplished once I got my program up and running. I enjoyed learning how to scrape, building a command line interface and associating attributes. Everything I learned about Ruby came together while actually building my own gem. Coding always come with challenges, but you have to learn how to get through them to experience the reward of making your program work!

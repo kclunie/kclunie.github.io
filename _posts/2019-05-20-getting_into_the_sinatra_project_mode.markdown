@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "Getting into the *Sinatra* Project Mode"
-date:       2019-05-20 13:31:25 +0000
+date:       2019-05-20 09:31:26 -0400
 permalink:  getting_into_the_sinatra_project_mode
 ---
 

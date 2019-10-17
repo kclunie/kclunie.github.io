@@ -12,7 +12,9 @@ The concept that I enjoyed the most while building my JavaScript project was und
 
 If you have a button like so:
 
-<!-- <button id='events-data'>See All Upcoming Events</button> -->
+```
+<button id='events-data'>See All Upcoming Events</button>
+```
  
  you can create a listening event like so:
  

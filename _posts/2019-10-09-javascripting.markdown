@@ -18,11 +18,13 @@ If you have a button like so:
  
  you can create a listening event like so:
  
- ` function listenForClick() {
-	$('button#events-data').on('click', function (event) {
-		alert('I was clicked!');
-	})
-}`
+```
+function listenForClick() {
+    $('button#events-data').on('click', function (event) {
+        alert('I was clicked!');
+    })
+}
+```
 
 and an alert box will pop up when the button is clicked!
 

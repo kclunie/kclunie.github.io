@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "Rails User Authentication"
-date:       2020-02-17 17:46:42 +0000
+date:       2020-02-17 12:46:43 -0500
 permalink:  rails_user_authentication
 ---
 

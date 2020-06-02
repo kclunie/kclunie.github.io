@@ -1,0 +1,24 @@
+---
+layout: post
+title:      "JavaScript 101"
+date:       2020-06-02 02:06:40 +0000
+permalink:  javascript_101
+---
+
+When I think of JavaScript I think of dynamic updates, events and interpretation. 
+
+JavaScript is a programming language that allows you to implement complex features on web pages such as displaying content updates, interactive maps, and scrolling videos. JavaScript, HTML and CSS make-up a trio of standard web technologies.
+
+HTML is the markup language used to structure web content, for example defining paragraphs or headers. CSS is a language used to style HTML content, for example setting background colors and fonts. JavaScript is a scripting language that allows you to dynamically update content. JavaScript allows you to do things such as store values inside variables, operate on strings and respond to events occurring on a web page.
+
+Client-side JavaScript also works with Application Programming Interfaces (APIs). APIs are pre-made code building blocks that allow you to implement programs that you would otherwise have to build yourself.
+
+When you load a web page in your browser, you are running HTML, CSS, and JavaScript inside the browser tab. JavaScript can dynamically modify HTML and CSS to update a user interface, via the Document Object Model. 
+
+Code can be considered interpreted or compiled. JavaScript is an interpreted programming language. With interpreted languages, the code is run from top to bottom and the result of running the code is immediately returned. You don't have to transform the code into a different form before the browser runs it. The code is received in its original form and processed. 
+
+Another distinction in JavaScript is server-side and client-side code. Client-side code is code that is run on a user's computer. When a web page is viewed, the page's client-side code is downloaded, then run and displayed by the browser. Server-side code on the other hand is run on the server, then its results are downloaded and displayed in the browser. JavaScript can be used as a server-side language with Node.js. 
+
+A web page without dynamically changing content is referred to as static. The word dynamic is used to describe both client-side JavaScript and server-side languages. Dynamic web pages have the ability to update and display new content as it changes. Server-side code dynamically generates new content on the server by pulling data from a database and client-side JavaScript dynamically generates new content inside the browser on the client.
+
+

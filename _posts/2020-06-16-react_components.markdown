@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "React Components"
-date:       2020-06-16 14:12:20 +0000
+date:       2020-06-16 10:12:21 -0400
 permalink:  react_components
 ---
 
@@ -22,7 +22,9 @@ class Person extends React.Component {
 
 We can use and display the Person component in the "root" element by using:
 
-`ReactDOM.render(<Person />, document.getElementById('root'));`
+```
+ReactDOM.render(<Person />, document.getElementById('root'));
+```
 
 Function Component
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "Relationships by Active Record"
-date:       2020-08-10 22:47:40 +0000
+date:       2020-08-10 18:47:41 -0400
 permalink:  relationships_by_active_record
 ---
 
@@ -32,9 +32,7 @@ What are these models and tables going to look like?
 **Book Model:**
 
 
-| id              | name           | writer_id   | genre_id  |
-
-| ----------- | -------------- | ----------- | ----------- |
+| id             | name            | writer_id   | genre_id  |
 
 | 2              | Harry Potter | 4               | 3              |
 
@@ -58,9 +56,7 @@ A writer will have many books and many genres through books. Remeber, books is t
 
 | id              | name            | 
 
-| ----------- | --------------- |
-
-| 4              | J. K. Rowling |
+| 4               | J. K. Rowling |
 
 
 ```
@@ -76,9 +72,7 @@ Last but not least, the genre model also relies on the books model to do the hea
 
 | id              | name            | 
 
-| ----------- | --------------- |
-
-| 3              | Fantasy         |
+| 3               | Fantasy         |
 
 ```
 class Genre < ActiveRecord::Base

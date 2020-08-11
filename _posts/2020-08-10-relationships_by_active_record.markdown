@@ -31,12 +31,10 @@ What are these models and tables going to look like?
 
 **Book Model:**
 
+| id | name | writer_id | genre_id |
+| -------- | -------- | -------- | -------- |
+| 2     | Harry Potter      | 4     | 3     |
 
-| id             | name            | writer_id   | genre_id  |
-
-| 2              | Harry Potter | 4               | 3              |
-
-   
 The Books table will have a writer_id column and a genre_id column. These values are foreign keys and will allow us to query a writer's books or genres, a book's writer or genre, and a genre's books and writers through Active Record methods on our classes. 
 
 Our model will now look like this:
@@ -54,9 +52,9 @@ Keep in mind, ActiveRecord::Base allows us to use these methods such as belongs_
 
 A writer will have many books and many genres through books. Remeber, books is the joins table and holds the writer_id and a genre_id, so that's taken care of.
 
-| id              | name            | 
-
-| 4               | J. K. Rowling |
+| id | name | 
+| -------- | -------- | 
+| 4     | J. K. Rowling      | 
 
 
 ```
@@ -70,9 +68,11 @@ end
 
 Last but not least, the genre model also relies on the books model to do the heavy lifting and can keep things simple.
 
-| id              | name            | 
+| id | name | 
+| -------- | -------- | 
+| 3     | Fantasy      | 
 
-| 3               | Fantasy         |
+
 
 ```
 class Genre < ActiveRecord::Base

@@ -10,12 +10,12 @@ Seeking relationship advice? Active Record is here to save the day. We want to b
 
 Active Record offers many different relationship options:
 
-belongs_to
-has_one
-has_many
-has_many :through
-has_one :through
-has_and_belongs_to_many
+* belongs_to
+* has_one
+* has_many
+* has_many :through
+* has_one :through
+* has_and_belongs_to_many
 
 Let's look at an example of how this works. Say we have three models: Writers, Books, and Genres. We need to get these three egotistical classes to work together. 
 

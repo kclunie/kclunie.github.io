@@ -1,7 +1,7 @@
 ---
 layout: post
-title:      ".upto(You)"
-date:       2020-09-06 15:22:25 +0000
+title:      "upto(Ruby)"
+date:       2020-09-06 11:22:25 -0400
 permalink:  upto_you
 ---
 

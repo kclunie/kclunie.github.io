@@ -1,0 +1,38 @@
+---
+layout: post
+title:      ".upto(You)"
+date:       2020-09-06 15:22:25 +0000
+permalink:  upto_you
+---
+
+
+I was elbow-deep into an algorithm, searching and searching for the right Ruby method to magically remedy my problem when I came across .upto.
+
+The .upto method in Ruby returns all the numbers from one number to another number. It iterates the given block, passing in increasing values from number1 up to number2. If no block is given, an Enumerator is returned instead.
+
+Syntax: (number1).upto(number2)
+
+So let's look at an example. Lets say we want to write a function that given a list of peoples' birth year and death year, finds the year(s) in which the most people were alive at the same time. ex: [[1910, 1950], [1900, 1951], [1945, 2000]] would return [1945, 1946, 1947, 1948, 1949, 1950]. Ok, so we know we need to examine all the years alive and compare them to one another. That's where .upto comes into play. We can iterate over our years and tally up the amount of times we find a given year by adding our years to a hash and counting them.
+
+To get our desired years back we can inject our fancy .upto method like so:
+
+```
+  def max_ppl_alive_years(data)
+    hash = Hash.new(0)
+    data.each do |lifespan|
+      lifespan[0].upto(lifespan[1]).each do |year|
+   hash[year] += 1
+      end
+    end
+
+    max = hash.values.max
+    hash.map { |key, value| 
+      if value == max
+        puts key
+      end
+    }
+  end
+
+```
+
+

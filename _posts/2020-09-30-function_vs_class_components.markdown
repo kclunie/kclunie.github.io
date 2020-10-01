@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "Function vs Class Components"
-date:       2020-10-01 02:26:21 +0000
+date:       2020-09-30 22:26:22 -0400
 permalink:  function_vs_class_components
 ---
 

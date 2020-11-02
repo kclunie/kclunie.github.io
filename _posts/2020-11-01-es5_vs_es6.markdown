@@ -1,0 +1,138 @@
+---
+layout: post
+title:      "ES5 vs. ES6"
+date:       2020-11-02 01:26:02 +0000
+permalink:  es5_vs_es6
+---
+
+
+ES5 is an abbreviation of ECMAScript 5 and also known as ECMAScript 2009. The sixth edition of the ECMAScript standard is ES6 or ECMAScript 6. It is also known as ECMAScript 2015. ES6 has enhanced the JavaScript language to allow us to write complex applications. Let's take a look at some of these differences.
+
+**Template Literals**
+
+The code below shows a template literal example in ES6 compared to ES5. We use the backtick and the ${expression} syntax as a placeholder.
+
+```
+/*ES5*/
+var name = 'John'; 
+var message = 'Hey' + name + ',';
+/*ES6*/
+let name = 'John'; 
+let message = `Hey ${name},`;
+```
+
+**Variables**
+
+In ES5 we used the var keyword to define variables. The scope of the var keyword is the entire enclosing function and if you use it at the top level outside of a function, it creates a property on the global object which cause issues. To fix these problems, ES6 created the variables let and const that are scoped to the containing “block” not “function”. Also let and const don’t create a property on the global object if you use them at the top level.
+
+```
+function helloworld() {
+   for (let x = 0; x < 2; x++) { 
+      // With the "let" keyword, x is only 
+         accessible in this block.
+   }
+   console.log(x); // x is not defined here  
+}
+We define a constant with const, so we cannot reassign it later:
+const x = 1; 
+x = 2; // throws an error
+```
+
+**Arrow Function**
+
+A function expression in ES5 looks like this:
+
+```
+const add = function(num) { 
+   return num + num; 
+}
+```
+
+Arrow functions get rid of the function keyword and adds an arrow between the parameters and the body of the function:
+
+```
+const add = (num) => { 
+   return num + num; 
+}
+```
+
+We can drop the return keyword, curly braces and parenthesis (if you only have one parameter), if our function is one line:
+
+`const add = num => num + num;`
+
+**Destructuring**
+
+Destructuring is an expression that allows us to extract properties from an object, or items from an array.
+
+```
+const address = { 
+   street: 'Franklin',
+   city: 'Buffalo',
+   state: 'NY'
+};
+```
+
+```
+//ES5
+var street = address.street;
+var city = address.city; 
+var state = address.state;
+//ES6
+const { street, city, state } = address;
+```
+
+We can also destructure arrays.
+
+```
+//ES5
+var values = ['Hello', 'World'];
+var first = values[0];
+var last = values[1];
+//ES6
+const values = ['Hello', 'World'];
+const [first, last] = values;
+```
+
+**Default Parameters**
+
+In ES5, if a function parameter doen’t have a value, we must check whether its undefined and assign some default value. ES6 answers this problem by adding in default parameters.
+
+```
+//ES5
+function getUser (name, age) { 
+      year = (typeof age !== ‘undefined’) ? age : 25; 
+      // rest of code… 
+}
+//ES6
+function getUser (name, age = 25) {   
+      // rest of code... 
+}
+```
+
+**Rest parameter and Spread operator**
+
+The spread operator spreads the elements of an array into individual values. We add ... in front of the array and this splits the array to single arguments which are passed to the function separately.
+
+```
+function sumNum(x, y, z){
+    console.log(x+y+z);
+}
+let newArray = [10,20,30];
+sumNum(...newArray);
+```
+
+Rest parameters are indicated by three dots … preceding a parameter. The named parameter becomes an array which contains the rest of the parameters.
+
+```
+function letters(x, y, ...z){
+    console.log(x, y, z);
+}
+letters(a, b, c, d, e);
+
+This would give us: a b [c, d, e]
+```
+
+
+
+
+

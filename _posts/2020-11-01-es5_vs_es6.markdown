@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "ES5 vs. ES6"
-date:       2020-11-02 01:26:02 +0000
+date:       2020-11-01 20:26:03 -0500
 permalink:  es5_vs_es6
 ---
 
@@ -58,7 +58,9 @@ const add = (num) => {
 
 We can drop the return keyword, curly braces and parenthesis (if you only have one parameter), if our function is one line:
 
-`const add = num => num + num;`
+```
+const add = num => num + num;
+```
 
 **Destructuring**
 
